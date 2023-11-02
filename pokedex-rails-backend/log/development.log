@@ -8672,3 +8672,24 @@ Started GET "/favicon.ico" for 127.0.0.1 at 2023-11-02 13:21:42 -0400
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+Started GET "/" for 127.0.0.1 at 2023-11-02 16:48:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/allonnam/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/allonnam/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.8ms | Allocations: 526)
+Completed 200 OK in 1320ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 963026)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-11-02 16:48:34 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:1
+  Rendered api/pokemon/index.json.jbuilder (Duration: 21.8ms | Allocations: 13929)
+Completed 200 OK in 31ms (Views: 18.4ms | ActiveRecord: 5.0ms | Allocations: 17949)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-11-02 16:48:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
