@@ -47,7 +47,10 @@ class Pokemon < ApplicationRecord
 
     has_many :moves,
     through: :poke_moves,
-    source: :moves
+    source: :Move
+
+    has_many :poke_moves,
+        dependent: :destroy
 
     
 end
