@@ -1,0 +1,1 @@
+json.extract! @pokemon, :image_url
